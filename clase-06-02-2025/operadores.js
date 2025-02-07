@@ -41,3 +41,22 @@ let estrictamenteDiferente = 5 !== "5" //Estrictamente diferente (true)
 console.log(mayor, menor, igual, estrictamenteIgual, diferente, estrictamenteDiferente);
 
 
+//Operadores lógicos
+let and = (10 > 5) && (3 < 8) //AND (true)
+let or = (10 > 5) || (3 < 8)//OR (true)
+let not = !(10 > 5)// NOT (flase)
+
+console.log(and, or, not);
+
+/*
+Jeraquía de operadores lógicos
+1. NOT (!) ->se evalúa primero
+2. AND (&&) - >se evalúa segundo
+3. OR (||) -> se evalúa al final
+
+Nota: Siempres se evalúa lo que haya entre paréntesis primero
+*/
+
+//Ejemplo de jerarquía de operadores lógicos
+var logico1 = true || false && false //Primero evalúo AND = true || false = true
+var logico2 = (true || false) && false  //(true) && false = false
